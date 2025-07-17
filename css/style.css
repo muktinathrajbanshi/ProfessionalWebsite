@@ -39,7 +39,7 @@
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-  --gradinetSupport: -webkit-linear-gradient(
+  --gradientSupport: -webkit-linear-gradient(
     0deg,
     rgb(132 144 255) 0%,
     rgb(98 189 252) 100%
@@ -255,4 +255,44 @@ li {
 .bio-image img {
   width: 80%;
   box-shadow: -2rem -2rem 0 0 var(--helper);
+  display: inline-block;
+}
+
+.bio-data-stats {
+  display: flex;
+  padding: 6.4rem 0;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bio-stats h3 {
+  margin-bottom: 1rem;
+}
+
+.bio-progress-bar {
+  width: 90%;
+  height: 0.8rem;
+  background-color: var(--para-tint);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.bio-progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  background: var(--gradientSupport);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
 }
