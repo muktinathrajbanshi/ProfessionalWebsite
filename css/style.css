@@ -147,7 +147,7 @@ li {
 }
 
 .btn {
-  background: var(--gradinetSupport);
+  background: var(--gradientSupport);
   padding: 1.6rem 3.2rem;
   border: none;
   color: var(--helper-tint);
@@ -260,9 +260,9 @@ li {
 
 .bio-data-stats {
   display: flex;
-  padding: 6.4rem 0;
+  padding: 4rem 0;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .bio-stats h3 {
@@ -295,4 +295,60 @@ li {
   -moz-border-radius: 10rem;
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
+}
+
+.bio-progress-2::before {
+  width: 99%;
+}
+.bio-progress-3::before {
+  width: 90%;
+}
+.bio-progress-4::before {
+  width: 85%;
+}
+.bio-progress-5::before {
+  width: 70%;
+}
+
+.bio-progress-bar span {
+  position: absolute;
+  top: 1.8rem;
+  width: 4rem;
+  height: 2rem;
+  background: var(--helper);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+}
+
+.bio-progress-bar span {
+  left: 76%;
+}
+
+.bio-progress-2 span {
+  left: 95%;
+}
+.bio-progress-3 span {
+  left: 86%;
+}
+.bio-progress-4 span {
+  left: 81%;
+}
+.bio-progress-5 span {
+  left: 66%;
+}
+
+/* to create a caret */
+.bio-progress-bar span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.8rem solid var(--helper);
+  border-color: transparent;
+  border-bottom-color: var(--helper);
+  top: -1.6rem;
 }
