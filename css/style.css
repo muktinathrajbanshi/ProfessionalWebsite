@@ -360,3 +360,30 @@ li {
   border-bottom-color: var(--helper);
   top: -1.6rem;
 }
+
+/* portfolio section start */
+.section-portfolio {
+  background: var(--bg);
+  transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+}
+
+.section-portfolio p {
+  max-width: 60rem;
+}
+
+.p-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  margin-top: 6.4rem 0;
+}
+
+.portfolio-images {
+  gap: 3.2rem;
+  /* margin-top: 6.4rem; */
+}
