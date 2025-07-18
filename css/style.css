@@ -146,6 +146,14 @@ li {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .btn {
   background: var(--gradientSupport);
   padding: 1.6rem 3.2rem;
