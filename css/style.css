@@ -606,6 +606,7 @@ li {
   margin-bottom: 1rem;
 }
 
+/* our swiper section start */
 .swiper {
   width: 100%;
   height: 100%;
@@ -616,6 +617,7 @@ li {
   font-size: 18px;
   background: #444;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -625,4 +627,58 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-client-msg {
+  padding: 5rem 8rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.swiper-client-msg::before {
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5rem solid var(--white);
+  border-color: transparent;
+  border-top-color: var(--helper-tint);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.swiper-client-msg p::before {
+  content: "\f10d";
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-size: 5rem;
+  color: #ced3ff;
+}
+
+.swiper-client-data {
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 3.2rem;
+}
+
+.swiper-slide img {
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.5rem solid var(--helper-tint);
 }
