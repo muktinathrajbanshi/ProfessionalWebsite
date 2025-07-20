@@ -25,3 +25,14 @@ p_btns.addEventListener("click", (e) => {
     img_active.forEach((curElem) => curElem.classList.remove("p-image-not-active"));
 
 });
+
+// swiper js code
+
+ var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
