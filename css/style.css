@@ -782,3 +782,19 @@ li {
   max-width: 30%;
   border: none;
 }
+
+/* footer section start  */
+
+.section-footer {
+  background-color: var(--heading);
+  transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+}
+
+.section-footer h3 {
+  color: var(--white);
+  margin-bottom: 4rem;
+}
