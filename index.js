@@ -40,3 +40,15 @@ p_btns.addEventListener("click", (e) => {
         clickable: true,
       },
     });
+
+    // scroll to top button
+
+    const footerElem = document.querySelector(".section-footer");
+
+    const scrollElement = document.createElement("div");
+    scrollElement.classList.add("scrollTop-style");
+
+    scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top">
+    </ion-icon>`;
+
+    footerElem.after(scrollElement);
