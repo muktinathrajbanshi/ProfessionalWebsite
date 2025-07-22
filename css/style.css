@@ -826,3 +826,46 @@ li {
 .f-address span {
   margin-right: 1rem;
 }
+
+.f-address p,
+.f-address a {
+  font-style: normal;
+  color: #adadad;
+}
+
+.f-social-icons {
+  margin: 5rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-icons .icons {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.f-social-icons .icons:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.f-credits p {
+  text-align: center;
+  color: #adadad;
+}
+
+.footer a:hover,
+.footer a:active {
+  color: var(--white);
+}
