@@ -42,7 +42,7 @@ p_btns.addEventListener("click", (e) => {
     });
 
     // scroll to top button
-    const heroSection = document.querySelector(".section-hero");
+    const header = document.querySelector(".header");
     const footerElem = document.querySelector(".section-footer");
 
     const scrollElement = document.createElement("div");
@@ -54,7 +54,7 @@ p_btns.addEventListener("click", (e) => {
     footerElem.after(scrollElement);
 
     const scrollTop = () => {
-      heroSection.scrollIntoView({ behavior: "smooth" });
+      header.scrollIntoView({ behavior: "smooth" });
     };
 
     scrollElement.addEventListener("click", scrollTop);
