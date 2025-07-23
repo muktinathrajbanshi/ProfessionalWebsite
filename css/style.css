@@ -625,6 +625,35 @@ li {
   display: inline-block;
 }
 
+.resume-para {
+  color: var(--black);
+  margin-top: -1.2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-data-subsection {
+  display: flex;
+}
+
+.resume-data-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-data-button {
+  text-transform: uppercase;
+  color: var(--helper);
+}
+
+.resume-data-right span {
+  font-size: 1.8rem;
+}
+
+.calender-icon {
+  font-size: 1.8rem;
+}
+
 /* our swiper section start */
 .swiper {
   width: 100%;
