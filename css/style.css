@@ -618,6 +618,13 @@ li {
   margin-bottom: 1rem;
 }
 
+/* Our Resume Section Start  */
+.resume-img img {
+  max-width: 80%;
+  box-shadow: -2rem 2rem 0 0 var(--helper);
+  display: inline-block;
+}
+
 /* our swiper section start */
 .swiper {
   width: 100%;
