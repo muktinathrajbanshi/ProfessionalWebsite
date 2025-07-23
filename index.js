@@ -1,3 +1,13 @@
+//creating a responsive navbar component
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const headerElem = document.querySelector(".header");
+
+mobile_nav.addEventListener("click", () => {
+  headerElem.classList.toggle("active");
+});
+
+
 // creating a portfolio tabbed component
 
 const p_btns = document.querySelector(".p-btns");
@@ -85,3 +95,4 @@ p_btns.addEventListener("click", (e) => {
       };
       updateNumber();
     });
+
