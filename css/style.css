@@ -128,6 +128,13 @@ li {
   color: var(--helper);
 }
 
+.mobile-navbar-btn {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
 /* Reusable Code Section */
 
 .section {
