@@ -632,26 +632,50 @@ li {
 }
 
 .resume-data-subsection {
+  max-width: 100%;
+  gap: 8rem;
   display: flex;
 }
 
 .resume-data-left {
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* padding: 1rem 2rem; */
+}
+.resume-data-left p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 0.4rem;
+}
+
+.resume-data-left .grid {
+  gap: 0.5rem;
 }
 
 .resume-data-button {
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: var(--helper);
 }
-
-.resume-data-right span {
-  font-size: 1.8rem;
+.resume-data-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 
-.calender-icon {
-  font-size: 1.8rem;
+.resume-data-right span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 0.4rem;
+  color: var(--para);
 }
 
 /* our swiper section start */
