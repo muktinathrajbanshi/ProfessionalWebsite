@@ -51,7 +51,7 @@
 
 
       <div class="section-contact-main contact-container">
-        <form action="#">
+        <form  action="https://formspree.io/f/mzzvrbpw" method="POST">
           <div class="grid grid-two-column">
             <div>
               <label for="username"></label>
@@ -60,31 +60,43 @@
                 name="username"
                 id="username"
                 placeholder="Username"
+                required
+                autocomplete="off"
               />
             </div>
             <div>
               <label for="email"></label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder="demo@gmail.com"
+                required
+                autocomplete="off"
               />
             </div>
           </div>
-          <label for="subject"></label>
           <div>
+            <label for="subject"></label>
             <input
               type="text"
               name="subject"
               id="subject"
               placeholder="subject"
+              autocomplete="off"
+              required
             />
           </div>
-          <label for="textarea"></label>
           <div>
-            <textarea name="textarea" id="textarea" cols="30" rows="10">
-            </textarea>
+            <label for="textarea"></label>
+            <textarea 
+            name="textarea" 
+            id="textarea"
+            cols="30" 
+            rows="10"
+            autocomplete="off"
+            min="5"
+            required></textarea>
           </div>
           <div>
             <input
