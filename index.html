@@ -623,31 +623,42 @@
                 name="username"
                 id="username"
                 placeholder="Username"
+                required
+                autocomplete="off"
               />
             </div>
             <div>
               <label for="email"></label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder="demo@gmail.com"
+                required
+                autocomplete="off"
               />
             </div>
           </div>
-          <label for="subject"></label>
           <div>
+            <label for="subject"></label>
             <input
               type="text"
               name="subject"
               id="subject"
               placeholder="subject"
+              autocomplete="off"
+              required
             />
           </div>
-          <label for="textarea"></label>
           <div>
-            <textarea name="textarea" id="textarea" cols="30" rows="10">
-            </textarea>
+            <label for="textarea"></label>
+            <textarea 
+            name="textarea" 
+            id="textarea"
+            cols="30" 
+            rows="10"
+            autocomplete="off"
+            required></textarea>
           </div>
           <div>
             <input
