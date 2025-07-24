@@ -25,7 +25,7 @@ p_btns.addEventListener("click", (e) => {
 
     // to find the number in data attr
     const btn_num = p_btn_clicked.dataset.btnNum;
-    console.log(btn_num);
+    // console.log(btn_num);
 
     const img_active = document.querySelectorAll(`.p-btn--${btn_num}`);
 
@@ -96,3 +96,20 @@ p_btns.addEventListener("click", (e) => {
       updateNumber();
     });
 
+// lazy loading images 
+
+const imgRef = document.querySelector("img[data-src]");
+
+const lazyImg = (entries) => {
+  const [entry] = entries;
+  console.log(entry);
+  if(!entry.isIntersecting) return;
+  entry.target.src = imgRef.dataset.src;
+}
+
+const imgObserver = new IntersectionObserver(lazyImg, {
+  root: null,
+  threshold: 0,
+});
+
+imgObserver.observe(imgRef);
