@@ -52,6 +52,11 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -990,6 +995,26 @@ li {
 
 /* media queries  */
 
+/* we can't use 1rem, 2rem, etc inside css but we can use "em" instead of "rem" or "px"  */
+
+/* 1200/16 = 75
+1200px = 75em */
+
+/* for 1000px  */
+
+/* for 1200px  */
+@media (max-width: 75em) {
+  .container {
+    max-width: 110rem;
+    padding: 0 6.2rem;
+  }
+
+  .navbar-lists {
+    gap: 3rem;
+  }
+}
+
+/* for 980px  */
 @media (max-width: 980px) {
   .header {
     position: relative;
