@@ -1215,3 +1215,47 @@ li {
     width: 70%;
   }
 }
+
+/* for 460px  */
+
+@media (max-width: 29em) {
+  .header {
+    padding: 0 6.2rem;
+  }
+  .header .logo {
+    width: 40%;
+  }
+
+  /* portfolio  */
+  .p-btns {
+    gap: 2rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+  }
+  .counter-numbers {
+    font-size: 3.2rem;
+  }
+
+  /* resume section  */
+  .resume-data-subsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .resume-data-subsection .resume-data-left {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 0;
+    width: 100%;
+  }
+
+  .resume-data-subsection .resume-data-right {
+    padding: 0;
+    width: 100%;
+    gap: 6rem;
+    flex-direction: row;
+  }
+}
