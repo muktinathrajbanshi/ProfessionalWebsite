@@ -1245,11 +1245,12 @@ li {
   }
 
   .resume-data-subsection .resume-data-left {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     padding: 0;
     width: 100%;
+  }
+
+  .resume-data-subsection .resume-data-left .grid-two-column {
+    grid-template-columns: 1fr;
   }
 
   .resume-data-subsection .resume-data-right {
@@ -1257,5 +1258,26 @@ li {
     width: 100%;
     gap: 6rem;
     flex-direction: row;
+  }
+  .section-freelancing h2 {
+    font-size: 3.5rem;
+  }
+
+  .contact-container {
+    padding: 0 3rem;
+  }
+
+  .contact-container .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .section-contact-main input[type="submit"] {
+    max-width: 40%;
+  }
+
+  /* footer section  */
+
+  .section-footer .f-about,
+  .section-footer .f-address {
+    grid-column: 1/-1;
   }
 }
