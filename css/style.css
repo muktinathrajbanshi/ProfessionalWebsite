@@ -1121,10 +1121,6 @@ li {
 
 /* for 800px  */
 @media (max-width: 50em) {
-  /* html {
-    font-size: 50%;
-  } */
-
   /* services section  */
 
   .section-services .grid {
@@ -1141,6 +1137,9 @@ li {
   }
 
   .resume-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-row: 2;
     /* transform: translateY(-2rem);
     -webkit-transform: translateY(-2rem);
@@ -1155,5 +1154,64 @@ li {
 
   .section-footer .grid-four-column {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* for 700px   */
+
+@media (max-width: 44em) {
+  .container {
+    max-width: 60rem;
+  }
+  .section-hero .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .section-hero-data {
+    align-items: center;
+  }
+  .hero-heading {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .hero-para {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section-hero img {
+    width: 70%;
+  }
+
+  /* bio data  */
+  .section-biodata .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-biodata .bio-image {
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-row: 2/3; */
+    grid-row: 2;
+    margin-top: 3.2rem;
+  }
+  .section-biodata .bio-image img {
+    width: 70%;
+  }
+
+  /* portfolio section  */
+  .section-portfolio .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-work-data .grid-four-column {
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+  .section-services .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+  .section-resume .resume-img img {
+    width: 70%;
   }
 }
