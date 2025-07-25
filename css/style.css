@@ -1152,4 +1152,8 @@ li {
   .section-resume .grid-two-column img {
     width: 50%;
   }
+
+  .section-footer .grid-four-column {
+    grid-template-columns: 1fr 1fr;
+  }
 }
