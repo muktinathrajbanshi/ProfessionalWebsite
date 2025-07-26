@@ -1103,6 +1103,7 @@ li {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 9999;
   }
 
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
