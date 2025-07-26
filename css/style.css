@@ -1241,7 +1241,7 @@ li {
   .resume-data-subsection {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3.2rem;
+    gap: 1.2rem;
   }
 
   .resume-data-subsection .resume-data-left {

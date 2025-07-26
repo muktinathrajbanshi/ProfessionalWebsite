@@ -51,6 +51,27 @@ p_btns.addEventListener("click", (e) => {
       },
     });
 
+    const myJsmedia = (widthSize) => {
+      if(widthSize.matches) {
+        new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+       });
+      } else {
+        new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        });
+      }
+    };
+
+   const widthSize = window.matchMedia("(max-width: 780px)");
+   // Call listener function at run time
+   myJsmedia(widthSize);
+   //Attach listener function on state changes
+   widthSize.addEventListener("change", myJsmedia);
+
+
     // scroll to top button
     const header = document.querySelector(".header");
     const footerElem = document.querySelector(".section-footer");
