@@ -1053,7 +1053,7 @@ li {
   }
 
   .header .logo {
-    width: 20%;
+    /* width: 20%; */
   }
 
   .navbar {
@@ -1221,9 +1221,6 @@ li {
 @media (max-width: 29em) {
   .header {
     padding: 0 6.2rem;
-  }
-  .header .logo {
-    width: 40%;
   }
 
   /* portfolio  */
