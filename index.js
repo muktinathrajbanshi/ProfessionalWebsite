@@ -1,3 +1,13 @@
+// for date purpose
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.innerText = new Date().getFullYear();
+  }
+});
+
 //creating a responsive navbar component
 
 const mobile_nav = document.querySelector(".mobile-navbar-btn");
@@ -136,3 +146,6 @@ const imgObserver = new IntersectionObserver(lazyImg, {
 });
 
 imgObserver.observe(imgRef);
+
+
+
